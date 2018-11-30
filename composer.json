@@ -1,5 +1,5 @@
 {
-    "name": "overtrue/easy-sms",
+    "name": "skywing\/easy-sms-ext",
     "description": "The easiest way to send short message.",
     "type": "library",
     "require": {
@@ -23,8 +23,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "overtrue",
-            "email": "i@overtrue.me"
+            "name": "skywing",
+            "email": "1749588982@qq.com"
         }
     ]
 }

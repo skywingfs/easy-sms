@@ -1,4 +1,5 @@
 <h1 align="center">Easy SMS</h1>
+<p align="center">基于"overtrue/easy-sms"给公司写的扩展</p>
 
 <p align="center">:calling: 一款满足你的多种发送需求的短信发送组件</p>
 
@@ -517,6 +518,18 @@ $easySms->send(13188888888, $message);
 ```php
     'avatardata' => [
         'app_key' => '', // APP KEY
+    ],
+```
+
+### [梦网云 SMS](http://con.monyun.cn:9960/developer_Center/index.html?htmlURL1=API&htmlURL2=APIone&iden=1350605183813637187)
+
+短信内容使用 `content`。
+
+```php
+    'mengwang' => [
+         'userid' => 'J95528',
+         'pwd' => '785236',
+         'host' => 'xx.xx.xx.xx:xx'
     ],
 ```
 
