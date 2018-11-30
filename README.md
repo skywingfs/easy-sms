@@ -50,7 +50,8 @@
 ## 安装
 
 ```shell
-$ composer require "overtrue/easy-sms"
+$ composer remove "overtrue/easy-sms"(如果有安装，先卸载)
+$ composer require "skywing/easy-sms-ext:dev-master -vvv"
 ```
 
 ## 使用
