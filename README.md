@@ -41,6 +41,7 @@
 - [天毅无线](http://www.85hu.com/)
 - [腾讯云 SMS](https://cloud.tencent.com/product/sms)
 - [阿凡达数据](http://www.avatardata.cn/)
+- [梦网云](http://con.monyun.cn:9960/developer_Center/index.html?htmlURL1=API&htmlURL2=APIone&iden=1350605183813637187)
 
 ## 环境需求
 
