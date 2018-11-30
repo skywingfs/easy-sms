@@ -529,8 +529,8 @@ $easySms->send(13188888888, $message);
 
 ```php
     'mengwang' => [
-         'userid' => 'J95528',
-         'pwd' => '785236',
+         'userid' => 'XXX',
+         'pwd' => 'XXX',
          'host' => 'xx.xx.xx.xx:xx'
     ],
 ```
