@@ -19,7 +19,7 @@ use Overtrue\EasySms\Traits\HasHttpRequest;
  *
  * @see http://con.monyun.cn:9960/developer_Center/index.html?htmlURL1=API&htmlURL2=APIone&iden=1350605183813637187
  */
-class MengWangGateway extends Gateway
+class MengwangGateway extends Gateway
 {
     use HasHttpRequest;
 
