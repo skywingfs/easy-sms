@@ -60,8 +60,8 @@ class MengwangGateway extends Gateway
                 'Content-Type' => 'application/json;charset=utf-8',
             ],
         ]);
-        if ($result['error']) {
-            throw new GatewayErrorException($result['msg'], $result['error'], $result);
+        if (0 != $result['result']) {
+            throw new GatewayErrorException($result['errmsg'], $result['result'], $result);
         }
 
         return $result;
