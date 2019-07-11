@@ -81,7 +81,8 @@ class Messenger
         }
 
         if (!$isSuccessful) {
-            throw new NoGatewayAvailableException($results);
+            return $results;
+//            throw new NoGatewayAvailableException($results);
         }
 
         return $results;
