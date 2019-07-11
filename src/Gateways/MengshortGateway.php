@@ -15,11 +15,11 @@ use Overtrue\EasySms\Support\Config;
 use Overtrue\EasySms\Traits\HasHttpRequest;
 
 /**
- * Class MengwangShortGateway.
+ * Class MengshortGateway.
  *
  * @see http://con.monyun.cn:9960/developer_Center/index.html?htmlURL1=API&htmlURL2=APIone&iden=1350605183813637187
  */
-class MengwangShortGateway extends Gateway
+class MengshortGateway extends Gateway
 {
     use HasHttpRequest;
 
