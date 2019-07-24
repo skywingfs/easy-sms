@@ -43,6 +43,11 @@ class ChuanglanGateway extends Gateway
     const CHANNEL_PROMOTION_CODE = 'smssh1';
 
     /**
+     * 会员营销短信渠道.
+     */
+    const CHANNEL_MARKETING_CODE = 'm';
+
+    /**
      * @param PhoneNumberInterface $to
      * @param MessageInterface     $message
      * @param Config               $config
@@ -95,7 +100,7 @@ class ChuanglanGateway extends Gateway
     {
         $channel = $config->get('channel', self::CHANNEL_VALIDATE_CODE);
 
-        if (!in_array($channel, [self::CHANNEL_VALIDATE_CODE, self::CHANNEL_PROMOTION_CODE])) {
+        if (!in_array($channel, [self::CHANNEL_VALIDATE_CODE, self::CHANNEL_PROMOTION_CODE, self::CHANNEL_MARKETING_CODE])) {
             throw new InvalidArgumentException('Invalid channel for ChuanglanGateway.');
         }
 
@@ -126,6 +131,13 @@ class ChuanglanGateway extends Gateway
             }
 
             $content = $sign.$content.$unsubscribe;
+        }elseif(self::CHANNEL_MARKETING_CODE == $channel){
+            $unsubscribe = (string) $config->get('unsubscribe', '');
+            if (empty($unsubscribe)) {
+                throw new InvalidArgumentException('Invalid unsubscribe for ChuanglanGateway when using marketing channel');
+            }
+
+            $content = $content.$unsubscribe;
         }
 
         return $content;
